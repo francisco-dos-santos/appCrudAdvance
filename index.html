@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud App advance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <article class="wrapper">
+        <section class="container">
+            <div class="sub-container">
+                <!-- budget -->
+                <div class="total-amount-container">
+                    <h3>Budget</h3>
+                    <p class="hide error" 
+                    id="budget-error">Value can't be empty or negative</p>
+                    <input 
+                    type="number" 
+                    name="" id="total-amount" 
+                    placeholder="Enter Total Amount">
+                    <button class="submit" 
+                    id="Total-amount-button">Set Budget</button>
+                </div>
+
+                <!-- expediture -->
+                <div class="user-amount-container">
+                    <h3>Expences</h3>
+                    <p class="hide error"
+                     id="product-title-error">
+                    Value can't be empty
+                    </p>
+                    <input type="text"
+                    class="product-title"
+                    id="productTitle"
+                    placeholder="Enter title of product">
+                    <input type="number"
+                    id="user-amount"
+                    placeholder="Enter cost of product">
+                    <button class="submit"
+                    id="check-amount">Check Amount</button>
+                </div>
+            </div>
+            <!-- output -->
+            <div class="output-container flex-space">
+                <div>
+                    <p>Total Budget</p>
+                    <span id="amount">0</span>
+                </div>
+                <div>
+                    <p>Expences</p>
+                    <span id="expenditure">0</span>
+                </div>
+                <div>
+                    <p>Balance</p>
+                    <span id="balance-amount">0</span>
+                </div>
+            </div>
+        </section>
+            <!-- List -->
+            <div class="list">
+                <h3>Espences List</h3>
+                <div class="container-list" id="list">
+
+                </div>
+            </div>
+   </article>
+   <script src="javascript/appCrud.js"></script>
+</body>
+</html>
